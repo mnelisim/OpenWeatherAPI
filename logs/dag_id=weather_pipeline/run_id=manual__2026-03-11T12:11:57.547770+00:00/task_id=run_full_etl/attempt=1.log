@@ -1,0 +1,34 @@
+[2026-03-11T12:29:19.006+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_pipeline.run_full_etl manual__2026-03-11T12:11:57.547770+00:00 [queued]>
+[2026-03-11T12:29:19.012+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_pipeline.run_full_etl manual__2026-03-11T12:11:57.547770+00:00 [queued]>
+[2026-03-11T12:29:19.012+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2026-03-11T12:29:19.023+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): run_full_etl> on 2026-03-11 12:11:57.547770+00:00
+[2026-03-11T12:29:19.029+0000] {standard_task_runner.py:57} INFO - Started process 137 to run task
+[2026-03-11T12:29:19.032+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'weather_pipeline', 'run_full_etl', 'manual__2026-03-11T12:11:57.547770+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/weather_dags.py', '--cfg-path', '/tmp/tmpiw8qw1yb']
+[2026-03-11T12:29:19.033+0000] {standard_task_runner.py:85} INFO - Job 18: Subtask run_full_etl
+[2026-03-11T12:29:19.047+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:193 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2026-03-11T12:29:19.077+0000] {task_command.py:416} INFO - Running <TaskInstance: weather_pipeline.run_full_etl manual__2026-03-11T12:11:57.547770+00:00 [running]> on host 7af6ea510c49
+[2026-03-11T12:29:19.145+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mnelisi' AIRFLOW_CTX_DAG_ID='weather_pipeline' AIRFLOW_CTX_TASK_ID='run_full_etl' AIRFLOW_CTX_EXECUTION_DATE='2026-03-11T12:11:57.547770+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-11T12:11:57.547770+00:00'
+[2026-03-11T12:29:19.146+0000] {logging_mixin.py:151} INFO - 
+[Run ID: 20260311_122919] [Time: 2026-03-11 12:29:19] Fetching weather for: johannesburg (Attempt 1)
+[2026-03-11T12:29:19.846+0000] {logging_mixin.py:151} INFO - 
+[Run ID: 20260311_122919] [Time: 2026-03-11 12:29:19] API Request Successful!
+[2026-03-11T12:29:19.848+0000] {logging_mixin.py:151} INFO - 
+[Run ID: 20260311_122919] [Time: 2026-03-11 12:29:19] Raw data saved Generated: data/raw/weather_report_20260311_122919.json
+[2026-03-11T12:29:19.854+0000] {logging_mixin.py:151} INFO - 
+[Run ID: 20260311_122919] [Time: 2026-03-11 12:29:19] CSV file created: reports/csv/weather_20260311_122919.csv
+[2026-03-11T12:29:19.861+0000] {logging_mixin.py:151} INFO - 
+[Run ID: 20260311_122919] [Time: 2026-03-11 12:29:19] Database connection successfully!
+[2026-03-11T12:29:19.862+0000] {logging_mixin.py:151} INFO - 
+[Run ID: 20260311_122919] [Time: 2026-03-11 12:29:19] Table 'weatherdata' is ready
+[2026-03-11T12:29:19.865+0000] {logging_mixin.py:151} INFO - 
+[Run ID: 20260311_122919] [Time: 2026-03-11 12:29:19] Data for Johannesburg successfully inserted to: weatherdata
+[2026-03-11T12:29:19.866+0000] {logging_mixin.py:151} INFO - 
+[Run ID: 20260311_122919] [Time: 2026-03-11 12:29:19] PDF Report Generated: reports/pdf/weather_report_20260311_122919.pdf
+[2026-03-11T12:29:19.866+0000] {logging_mixin.py:151} INFO - 
+[Run ID: 20260311_122919] [Time: 2026-03-11 12:29:19] ETL run successfuly completed
+[2026-03-11T12:29:19.867+0000] {logging_mixin.py:151} INFO - 
+[Run ID: 20260311_122919] [Time: 2026-03-11 12:29:19] Database connection closed
+[2026-03-11T12:29:19.867+0000] {python.py:194} INFO - Done. Returned value was: None
+[2026-03-11T12:29:19.879+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=weather_pipeline, task_id=run_full_etl, execution_date=20260311T121157, start_date=20260311T122919, end_date=20260311T122919
+[2026-03-11T12:29:19.927+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2026-03-11T12:29:19.951+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": 28.1878,
+        "lat": -25.7449
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 24.06,
+        "feels_like": 23.57,
+        "temp_min": 24.06,
+        "temp_max": 24.21,
+        "pressure": 1014,
+        "humidity": 40,
+        "sea_level": 1014,
+        "grnd_level": 872
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.06,
+        "deg": 60
+    },
+    "clouds": {
+        "all": 88
+    },
+    "dt": 1770492464,
+    "sys": {
+        "type": 1,
+        "id": 2001,
+        "country": "ZA",
+        "sunrise": 1770436026,
+        "sunset": 1770483342
+    },
+    "timezone": 7200,
+    "id": 964137,
+    "name": "Pretoria",
+    "cod": 200
+}

@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": 18.4232,
+        "lat": -33.9258
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 19.64,
+        "feels_like": 18.94,
+        "temp_min": 18.84,
+        "temp_max": 20.61,
+        "pressure": 1020,
+        "humidity": 49,
+        "sea_level": 1020,
+        "grnd_level": 1018
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 8.23,
+        "deg": 160
+    },
+    "clouds": {
+        "all": 20
+    },
+    "dt": 1771055702,
+    "sys": {
+        "type": 2,
+        "id": 2073005,
+        "country": "ZA",
+        "sunrise": 1771042832,
+        "sunset": 1771090841
+    },
+    "timezone": 7200,
+    "id": 3369157,
+    "name": "Cape Town",
+    "cod": 200
+}

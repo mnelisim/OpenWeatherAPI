@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: weather
+    description: "Hourly aggregated weather data by city"
+    columns:
+      - name: city
+        description: "City name"
+        tests:
+          - not_null
+      - name: hour
+        description: "Hour of observation"
+      - name: avg_temperature
+        description: "Average temperature for the hour"
+      - name: avg_humidity
+        description: "Average humidity for the hour"

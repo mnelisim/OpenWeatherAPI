@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": 30.9703,
+        "lat": -25.4745
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 27.16,
+        "feels_like": 28.36,
+        "temp_min": 27.16,
+        "temp_max": 27.16,
+        "pressure": 1006,
+        "humidity": 61,
+        "sea_level": 1006,
+        "grnd_level": 933
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.57,
+        "deg": 250
+    },
+    "clouds": {
+        "all": 51
+    },
+    "dt": 1771063188,
+    "sys": {
+        "type": 1,
+        "id": 1937,
+        "country": "ZA",
+        "sunrise": 1771040473,
+        "sunset": 1771087178
+    },
+    "timezone": 7200,
+    "id": 971534,
+    "name": "Nelspruit",
+    "cod": 200
+}

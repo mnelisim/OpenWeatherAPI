@@ -1,0 +1,107 @@
+[0m02:43:58.514285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cbc74ff9ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cbc774ddf10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cbc74e72630>]}
+
+
+============================== 02:43:58.519012 | 0d83db74-12b1-4a00-bf31-b6f919a7276f ==============================
+[0m02:43:58.519012 [info ] [MainThread]: Running with dbt=1.11.7
+[0m02:43:58.519547 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'use_colors': 'True', 'version_check': 'True', 'static_parser': 'True', 'introspect': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'no_print': 'None', 'write_json': 'True', 'partial_parse': 'True', 'profiles_dir': '/home/mnelisi/.dbt', 'invocation_command': 'dbt init openweather_dbt', 'empty': 'None', 'warn_error': 'None', 'printer_width': '80', 'debug': 'False', 'indirect_selection': 'eager', 'log_format': 'default', 'cache_selected_only': 'False'}
+[0m02:43:58.526740 [info ] [MainThread]: Creating dbt configuration folder at /home/mnelisi/.dbt
+[0m02:43:58.529479 [debug] [MainThread]: Starter project path: /home/mnelisi/Desktop/DataEngineering/OpenWeatherAPI/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m02:43:58.532912 [info ] [MainThread]: 
+Your new dbt project "openweather_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m02:43:58.533552 [info ] [MainThread]: Setting up your profile.
+[0m02:56:15.720624 [info ] [MainThread]: Profile openweather_dbt written to /home/mnelisi/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m02:56:15.725133 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 737.2678, "process_in_blocks": "1176", "process_kernel_time": 0.143691, "process_mem_max_rss": "106488", "process_out_blocks": "80", "process_user_time": 1.191441}
+[0m02:56:15.726173 [debug] [MainThread]: Command `dbt init` succeeded at 02:56:15.726002 after 737.27 seconds
+[0m02:56:15.728244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cbc76466240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cbc749495e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cbc75264ef0>]}
+[0m02:56:15.729134 [debug] [MainThread]: Flushing usage events
+[0m02:56:16.862870 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:58:04.196796 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9b995acad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9b99bf5220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9b99b20fe0>]}
+
+
+============================== 02:58:04.199348 | 9dff1865-f10d-4bf2-ae9b-90bb73823414 ==============================
+[0m02:58:04.199348 [info ] [MainThread]: Running with dbt=1.11.7
+[0m02:58:04.199813 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'version_check': 'True', 'profiles_dir': '/home/mnelisi/.dbt', 'log_path': 'logs', 'use_colors': 'True', 'printer_width': '80', 'log_cache_events': 'False', 'write_json': 'True', 'introspect': 'True', 'fail_fast': 'False', 'debug': 'False', 'invocation_command': 'dbt debug', 'warn_error': 'None', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'cache_selected_only': 'False', 'partial_parse': 'True', 'target_path': 'None', 'use_experimental_parser': 'False', 'empty': 'None', 'log_format': 'default'}
+[0m02:58:04.207070 [info ] [MainThread]: dbt version: 1.11.7
+[0m02:58:04.207411 [info ] [MainThread]: python version: 3.12.3
+[0m02:58:04.207743 [info ] [MainThread]: python path: /home/mnelisi/Desktop/DataEngineering/OpenWeatherAPI/venv/bin/python3
+[0m02:58:04.208030 [info ] [MainThread]: os info: Linux-6.17.0-14-generic-x86_64-with-glibc2.39
+[0m02:58:04.247430 [info ] [MainThread]: Using profiles dir at /home/mnelisi/.dbt
+[0m02:58:04.247882 [info ] [MainThread]: Using profiles.yml file at /home/mnelisi/.dbt/profiles.yml
+[0m02:58:04.248183 [info ] [MainThread]: Using dbt_project.yml file at /home/mnelisi/Desktop/DataEngineering/OpenWeatherAPI/dbt_project.yml
+[0m02:58:04.248612 [info ] [MainThread]: adapter type: postgres
+[0m02:58:04.248892 [info ] [MainThread]: adapter version: 1.10.0
+[0m02:58:04.249186 [info ] [MainThread]: Configuration:
+[0m02:58:04.249448 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m02:58:04.249717 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m02:58:04.249983 [info ] [MainThread]: Required dependencies:
+[0m02:58:04.250263 [debug] [MainThread]: Executing "git --help"
+[0m02:58:04.252571 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m02:58:04.253063 [debug] [MainThread]: STDERR: "b''"
+[0m02:58:04.253428 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m02:58:04.253823 [info ] [MainThread]: Connection:
+[0m02:58:04.254229 [info ] [MainThread]:   host: 5432
+[0m02:58:04.254615 [info ] [MainThread]:   port: 5432
+[0m02:58:04.255229 [info ] [MainThread]:   user: airflow
+[0m02:58:04.255786 [info ] [MainThread]:   database: airflow
+[0m02:58:04.256253 [info ] [MainThread]:   schema: public
+[0m02:58:04.256699 [info ] [MainThread]:   connect_timeout: 10
+[0m02:58:04.257080 [info ] [MainThread]:   role: None
+[0m02:58:04.257362 [info ] [MainThread]:   search_path: None
+[0m02:58:04.257642 [info ] [MainThread]:   keepalives_idle: 0
+[0m02:58:04.257920 [info ] [MainThread]:   sslmode: None
+[0m02:58:04.258209 [info ] [MainThread]:   sslcert: None
+[0m02:58:04.258487 [info ] [MainThread]:   sslkey: None
+[0m02:58:04.258759 [info ] [MainThread]:   sslrootcert: None
+[0m02:58:04.259062 [info ] [MainThread]:   application_name: dbt
+[0m02:58:04.259340 [info ] [MainThread]:   retries: 1
+[0m02:58:04.259752 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m02:58:04.346794 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m02:58:04.371490 [debug] [MainThread]: Using postgres connection "debug"
+[0m02:58:04.371997 [debug] [MainThread]: On debug: select 1 as id
+[0m02:58:04.372403 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:58:14.383131 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "5432" (0.0.21.56), port 5432 failed: timeout expired
+
+[0m02:58:24.394583 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m02:58:24.396089 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m02:58:24.398129 [debug] [MainThread]: On debug: No close available on handle
+[0m02:58:24.399232 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m02:58:24.400427 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m02:58:24.401848 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/mnelisi/Desktop/DataEngineering/OpenWeatherAPI/dbt_project.yml> not found
+
+[0m02:58:24.402754 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "5432" (0.0.21.56), port 5432 failed: timeout expired
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m02:58:24.404527 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 20.254908, "process_in_blocks": "2704", "process_kernel_time": 0.184126, "process_mem_max_rss": "113004", "process_out_blocks": "32", "process_user_time": 1.206278}
+[0m02:58:24.405283 [debug] [MainThread]: Command `dbt debug` failed at 02:58:24.405152 after 20.26 seconds
+[0m02:58:24.405761 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m02:58:24.406263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9b99a43d40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9b98db9cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b9b99ea1fd0>]}
+[0m02:58:24.406740 [debug] [MainThread]: Flushing usage events
+[0m02:58:25.631801 [debug] [MainThread]: An error was encountered while trying to flush usage events

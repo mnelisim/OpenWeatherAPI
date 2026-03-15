@@ -1,0 +1,55 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: openweatherapi_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: openweatherapi_pgadmin
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@openweatherapi.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgres
+
+  airflow:
+    image: apache/airflow:2.7.2
+    container_name: openweatherapi_airflow
+    restart: always
+    depends_on:
+      - postgres
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      PYTHONPATH: "/opt/airflow/OpenWeatherAPI"
+      _PIP_ADDITIONAL_REQUIREMENTS: "fpdf" 
+
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./OpenWeatherAPI:/opt/airflow/OpenWeatherAPI
+    ports:
+      - "8081:8080"
+    user: "${AIRFLOW_UID}:${AIRFLOW_GID}"
+    command: >
+      bash -c "airflow db init &&
+              airflow scheduler &
+              airflow webserver"
+    
+volumes:
+  postgres_data:
+

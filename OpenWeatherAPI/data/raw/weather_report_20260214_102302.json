@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": 27.838,
+        "lat": -26.7117
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 24.58,
+        "feels_like": 24.43,
+        "temp_min": 24.58,
+        "temp_max": 24.58,
+        "pressure": 1009,
+        "humidity": 51,
+        "sea_level": 1009,
+        "grnd_level": 854
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.54,
+        "deg": 280,
+        "gust": 4.57
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1771057395,
+    "sys": {
+        "country": "ZA",
+        "sunrise": 1771041136,
+        "sunset": 1771088018
+    },
+    "timezone": 7200,
+    "id": 944986,
+    "name": "Vanderbijlpark",
+    "cod": 200
+}
