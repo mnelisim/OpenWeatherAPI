@@ -1,55 +1,14 @@
-# =========================================
-# Python environment and cache
-# =========================================
-venv/
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.egg-info/
-*.pytest_cache/
+venv/
 
-# =========================================
-# OS files
-# =========================================
-.DS_Store
-Thumbs.db
+# Data folders
+OpenWeatherAPI/data/
+logs/
 
-# =========================================
-# Data folders / ETL outputs
-# =========================================
-data/raw/
-data/processed/
-*.csv
-*.parquet
-*.json
-*.logs
-*.pdf
-
-OpenWeatherAPI/
-*.logs
-
-# =========================================
-# Superset
-# =========================================
-superset_home/
-*.db  # SQLite metadata (if used)
-*.sqlite
-
-# =========================================
-# dbt
-# =========================================
-target/
-dbt_packages/
-
-# =========================================
-# Jupyter / Notebook
-# =========================================
-.ipynb_checkpoints/
-
-# =========================================
-# IDE / Editor files
-# =========================================
-.vscode/
-.idea/
+# IDE / OS
 *.swp
+.DS_Store
