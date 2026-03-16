@@ -44,7 +44,10 @@ def transform_data(cur, conn, data_raw, timestamp_file):
         if not valid:
             log_metrics(cur, conn, timestamp_file, "Validate", 0, "failed", start, end, error="validation failed")
             exit(1)
-        log_metrics(cur, conn, timestamp_file, "Validate", 1, "success", start, end)
+            
+         #row total clean   
+        row_count = len(data_clean) 
+        log_metrics(cur, conn, timestamp_file, "Validate", row_count, "success", start, end)
         return data_clean
     
 def load_data(cur, conn, data_clean, timestamp_file):

@@ -1,0 +1,5 @@
+city,weather,windspeed,humidity,temperature,longitude,latitude,timestamp
+Johannesburg,Broken Clouds,3.82,80,20.48,28.0436,-26.2023,2026-03-16 16:00:06
+Cape Town,Few Clouds,40.75,78,21.55,18.4232,-33.9258,2026-03-16 16:00:06
+Durban,Overcast Clouds,3.2,84,25.29,31.0292,-29.8579,2026-03-16 16:00:06
+Pretoria,Scattered Clouds,1.62,78,21.9,28.1878,-25.7449,2026-03-16 16:00:06
