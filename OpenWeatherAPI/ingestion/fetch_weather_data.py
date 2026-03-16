@@ -3,8 +3,8 @@ import time
 import json
 import os
 from datetime import datetime
-from config import WEATHER_API_KEY, BASE_URL
-from logs.logging import log_message
+from OpenWeatherAPI.config import WEATHER_API_KEY, BASE_URL
+from OpenWeatherAPI.logs.logging import log_message
 
 #Extract api
 def main_request(retries=3, timestamp_file=None):

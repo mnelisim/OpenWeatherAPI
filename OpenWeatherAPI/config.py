@@ -1,6 +1,8 @@
 # config.py
-
+from dotenv import load_dotenv
 import os
+
+load_dotenv()  # loads variables from .env
 
 # ===================== CONFIG API ====================
 WEATHER_API_KEY = os.getenv("WEATHER_API_KEY")

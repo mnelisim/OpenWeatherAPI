@@ -7,19 +7,67 @@ The pipeline is orchestrated with Apache Airflow and containerized using Docker 
 
 ## Architecture
 
-![Architecture](openweatherapi_architecture.png)
+![Architecture](architecture.png)
 
-1. Extract weather data from OpenWeather API using Python
+1. Extract
+   Weather data is fetched from the OpenWeather API using Python.
 
-2. Load raw data into PostgreSQL
+2. Raw Data Storage
+   The raw API response is saved as JSON for traceability and debugging.
 
-3. Transform and model the data using dbt
+3. Transform
+   Raw weather data is cleaned, parsed, and structured into a tabular format.
 
-4. Orchestrate tasks with Apache Airflow
+5. Data Validation
+   The transformed dataset is validated to ensure data quality before loading.
 
-5. Visualize insights using Apache Superset
+6. Load
+   The processed data is stored in a PostgreSQL database.
 
-6. Run services inside Docker containers
+7. Metrics Logging
+   ETL run metrics (status, records processed, runtime, errors) are recorded in PostgreSQL.
+
+8. Orchestration
+   The ETL pipeline is orchestrated using Apache Airflow, with tasks for extract, transform, load, and reporting.
+
+   ## ETL Pipeline with Apache Airflow
+
+    The ETL pipeline orchestrates the extraction, transformation, and loading of weather data:
+
+    1. Extract weather data from OpenWeather API
+    2. Transform and clean the data
+    3. Load data into PostgreSQL
+    4. Log metrics for each step
+    5. Generate PDF reports
+
+    # Airflow DAG Overview
+
+    ![Airflow DAG Graph](screenshots/Airflow_dag/airflow_dag_gragh.png)
+
+    This image shows the DAG structure with separate tasks for extract, transform, load, and report generation.
+
+    # Airflow Task Logs
+
+    ![Airflow Task Logs](screenshots/Airflow_dag/airflow_task_logs.png)
+
+    # Airflow Gantt
+
+    ![Airflow Gantt](screenshots/Airflow_dag/airflow_gantt.png)
+
+    # Airflow Runs
+
+    ![Airflow Task Logs](screenshots/Airflow_dag/airflow_runs.png)
+
+    Here we can see the tasks running successfully and metrics being logged.
+
+9. Data Modeling
+   dbt is used to model and transform the stored data for analytics.
+
+10. Visualization
+    Apache Superset connects to PostgreSQL to create dashboards and visualize insights.
+
+11. Containerization
+    All services (Airflow, PostgreSQL, Superset, dbt) run inside Docker containers.
 
 ## Tech Stack
 
@@ -43,6 +91,7 @@ OpenWeatherAPI/
 dags/                         # Apache Airflow DAGs for orchestration
 logs/                         # Airflow logs
 openweather_dbt/              # dbt project (models, tests, transformations)
+OpenWeatherAPI/               #Modules(ingest, processing, report, storage, config file, and main file)                
 plugins/                      # Airflow custom plugins
 screenshots/
 ETL/                          # Code or terminal screenshots

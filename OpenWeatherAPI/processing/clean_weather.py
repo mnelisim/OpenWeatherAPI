@@ -2,7 +2,7 @@ import csv
 import pandas as pd
 import os
 from datetime import datetime
-from logs.logging import log_message
+from OpenWeatherAPI.logs.logging import log_message
 
 def parse_json(all_data, timestamp_file):
     rows = []
@@ -21,8 +21,8 @@ def parse_json(all_data, timestamp_file):
 # Create DataFrame 
     df = pd.DataFrame(rows)
     
-    os.makedirs(f"reports/csv", exist_ok=True)
-    csv_filename = f"reports/csv/weather_{timestamp_file}.csv"
+    os.makedirs(f"OpenWeatherAPI/reports/csv", exist_ok=True)
+    csv_filename = f"OpenWeatherAPI/reports/csv/weather_{timestamp_file}.csv"
     df.to_csv(csv_filename, index=False)
     log_message(f"CSV file created: {csv_filename}", run_id=timestamp_file)
 

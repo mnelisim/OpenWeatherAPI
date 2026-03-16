@@ -1,4 +1,4 @@
-from logs.logging import log_message
+from OpenWeatherAPI.logs.logging import log_message
 
 
 def validate_weather_data(data, run_id):

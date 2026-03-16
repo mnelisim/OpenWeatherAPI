@@ -2,8 +2,8 @@ import psycopg2
 import time
 import pandas as pd
 from datetime import datetime
-from config import table_name,DB_NAME,DB_HOST,DB_USER,DB_PASSWORD,DB_PORT
-from logs.logging import log_message
+from OpenWeatherAPI.config import table_name,DB_NAME,DB_HOST,DB_USER,DB_PASSWORD,DB_PORT
+from OpenWeatherAPI.logs.logging import log_message
 
 #===================create_table_if_not_exists=========
 def create_table_if_not_exists(cur, conn, table_name, timestamp_file):

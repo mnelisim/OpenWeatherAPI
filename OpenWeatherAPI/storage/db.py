@@ -1,7 +1,7 @@
 import psycopg2
 import time
-from config import DB_NAME,DB_HOST,DB_USER,DB_PASSWORD,DB_PORT
-from logs.logging import log_message
+from OpenWeatherAPI.config import DB_NAME,DB_HOST,DB_USER,DB_PASSWORD,DB_PORT
+from OpenWeatherAPI.logs.logging import log_message
 
 
 #Database connection

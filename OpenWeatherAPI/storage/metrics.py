@@ -1,8 +1,8 @@
 import psycopg2
 import time
 from datetime import datetime
-from config import table_name,DB_NAME,DB_HOST,DB_USER,DB_PASSWORD,DB_PORT
-from logs.logging import log_message
+from OpenWeatherAPI.config import table_name,DB_NAME,DB_HOST,DB_USER,DB_PASSWORD,DB_PORT
+from OpenWeatherAPI.logs.logging import log_message
 
 #===================create_table_if_not_exists=========
 def create_metrics_table(cur, conn, run_id=None):
