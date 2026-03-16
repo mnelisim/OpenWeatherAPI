@@ -69,14 +69,32 @@ The pipeline is orchestrated with Apache Airflow and containerized using Docker 
 11. Containerization
     All services (Airflow, PostgreSQL, Superset, dbt) run inside Docker containers.
 
+## Features
+
+- **Python ETL Pipeline** – Extracts weather data from the OpenWeather API and processes it through a structured pipeline.
+- **Data Validation** – Ensures data quality with validation checks for temperature, humidity, wind speed, and coordinates.
+- **PostgreSQL Storage** – Stores processed weather data and pipeline metrics in a PostgreSQL database.
+- **Apache Airflow Orchestration** – Automates and schedules the ETL pipeline using Airflow DAGs.
+- **dbt Transformations** – Performs analytical transformations on the processed data.
+- **Apache Superset Dashboards** – Visualizes weather analytics through interactive dashboards.
+- **Docker Containers** – Containerized environment for Airflow, PostgreSQL, and Superset services.
+- **Pipeline Metrics Logging** – Tracks pipeline execution metrics and validation results.
+- **Automated PDF & CSV Reports** – Generates reports from processed weather data.
+- **Architecture Diagram** – Illustrates the full data pipeline architecture.
+- **Pipeline Screenshots** – Includes Airflow DAG execution and PostgreSQL metrics.
+- **Git Version Control** – Managed using Git for version tracking and collaboration.
+
 ## Tech Stack
 
-- Python – Data extraction
-- PostgreSQL – Data storage
-- dbt – Data transformation & modeling
-- Apache Airflow – Pipeline orchestration
-- Apache Superset – Data visualization
-- Docker – Containerization
+- Python
+- Apache Airflow
+- PostgreSQL
+- dbt
+- Apache Superset
+- Docker
+- Pandas
+- FPDF
+- Git
 
 ## Pipeline Flow
 
@@ -89,9 +107,9 @@ The pipeline is orchestrated with Apache Airflow and containerized using Docker 
 ## Project Structure
 OpenWeatherAPI/
 dags/                         # Apache Airflow DAGs for orchestration
-logs/                         # Airflow logs
+logs/                         # Airflow logs and pipline logs
 openweather_dbt/              # dbt project (models, tests, transformations)
-OpenWeatherAPI/               #Modules(ingest, processing, report, storage, config file, and main file)                
+OpenWeatherAPI/               #Modules(ingestion, processing, report, storage, logs config file, and main file)                
 plugins/                      # Airflow custom plugins
 screenshots/
 ETL/                          # Code or terminal screenshots
@@ -139,19 +157,7 @@ dbt test
 7. Access Superset (open your browser)
 http://localhost:8088
 
-## Features
 
-- Automated ETL pipeline
-
-- Data transformation using dbt
-
-- Data validation tests
-
-- Workflow orchestration with Airflow
-
-- Interactive dashboards with Superset
-
-- Dockerized environment
 
 ## Author
 
