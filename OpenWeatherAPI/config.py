@@ -1,17 +1,19 @@
 # config.py
 
-#=====================CONFIG API====================
-WEATHER_API_KEY = "210fdd948a660e93fb8d292e45c3fb6b"
+import os
+
+# ===================== CONFIG API ====================
+WEATHER_API_KEY = os.getenv("WEATHER_API_KEY")
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
-#=====================CONFIG TABLE====================
+# ===================== CONFIG TABLE ====================
 table_name = "weatherdata"
 table_name2 = "pipeline_metrics"
 
-#=====================CONFIG DATABASE====================
-DB_NAME="airflow"
-DB_HOST="172.17.0.1"
-DB_USER="airflow" 
-DB_PASSWORD="airflow"
-DB_PORT="5432"
+# ===================== CONFIG DATABASE ====================
+DB_NAME = os.getenv("DB_NAME")
+DB_HOST = os.getenv("DB_HOST")
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_PORT = os.getenv("DB_PORT")
 

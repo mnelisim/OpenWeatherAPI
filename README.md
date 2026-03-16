@@ -57,11 +57,22 @@ openweatherapi_architecture.png # Pipeline architecture diagram
 requirements.txt              # Python dependencies
 README.md                     # Project documentation
 
-## How run the project
+## Environment Variables
+
+Create a .env file with:
+
+WEATHER_API_KEY=your_api_key
+DB_NAME=airflow
+DB_HOST=localhost
+DB_USER=airflow
+DB_PASSWORD=airflow
+DB_PORT=5432
+
+## How to run the project
 
 1. Clone the repo
-git clone https://github.com/yourusername/openweather-data-engineering-pipeline.git
-cd openweather-data-engineering-pipeline
+git clone git clone https://github.com/mnelisim/OpenWeatherAPI.git
+cd OpenWeatherAPI
 2. Create a virtual environment
 python3 -m venv venv
 source venv/bin/activate
