@@ -18,4 +18,4 @@ logs/
 
 #Reports
 OpenWeatherAPI/reports/csv/*.csv
-OpenWeatherAPI/reports/pdf/*.pdf
+OpenWeatherAPI/reports/pdf/*.pdfsuperset/
