@@ -77,7 +77,7 @@ This pipeline provides real-world value by:
 
     ![Airflow Task Logs](screenshots/Airflow_dag/airflow_runs.png)
 
-    Here we can see the tasks running successfully and metrics being logged.
+   Here we can see the tasks running successfully and metrics being logged.
 
 9. Data Modeling
    dbt is used to model and transform the stored data for analytics.
