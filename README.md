@@ -1,5 +1,7 @@
 # OpenWeatherAPI Data Engineering Pipeline
 
+[![OpenWeatherAPI CI/CD](https://github.com/mnelisim/OpenWeatherAPI/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/mnelisim/OpenWeatherAPI/actions/workflows/ci-cd.yml)
+
 ## Overview
 This project demonstrates an end-to-end data engineering pipeline that ingests weather data from the OpenWeather API, processes it, stores it in PostgreSQL, transforms it using dbt, and visualizes insights using Apache Superset.
 
