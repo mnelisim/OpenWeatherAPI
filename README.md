@@ -112,6 +112,7 @@ This ensures that the latest version of the OpenWeatherAPI pipeline is always re
 - **Docker Containers** – Containerized environment for Airflow, PostgreSQL, and Superset services.
 - **Pipeline Metrics Logging** – Tracks pipeline execution metrics and validation results.
 - **Automated PDF & CSV Reports** – Generates reports from processed weather data.
+- **CI/CD workflow:** Automatically builds and pushes Docker images via GitHub Actions
 - **Architecture Diagram** – Illustrates the full data pipeline architecture.
 - **Pipeline Screenshots** – Includes Airflow DAG execution and PostgreSQL metrics.
 - **Git Version Control** – Managed using Git for version tracking and collaboration.
@@ -126,6 +127,7 @@ This ensures that the latest version of the OpenWeatherAPI pipeline is always re
 - Docker
 - Pandas
 - FPDF
+- CI/CD
 - Git
 
 ## Pipeline Flow
