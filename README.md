@@ -166,7 +166,7 @@ WEATHER_API_KEY=your_api_key
 DB_NAME=airflow
 DB_HOST=localhost
 DB_USER=airflow
-DB_PASSWORD=airflow
+DB_PASSWORD=your_password
 DB_PORT=5432
 
 ## How to run the project
