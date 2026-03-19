@@ -26,6 +26,17 @@ This pipeline provides real-world value by:
 - **Pipeline Monitoring & Reliability**  
   Built-in metrics (runtime, failures, rows processed) help engineers detect and fix issues quickly.
 
+## CI/CD
+
+This project uses GitHub Actions for continuous integration and deployment:
+
+- On every push to the `main` branch:
+  - The Docker image is automatically built.
+  - The image is pushed to Docker Hub.
+  - Tests (if any) are run automatically.
+
+This ensures that the latest version of the OpenWeatherAPI pipeline is always ready to run in a containerized environment.
+
 ## Architecture
 
 ![Architecture](architecture.png)
