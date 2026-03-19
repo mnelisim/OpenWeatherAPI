@@ -128,7 +128,7 @@ OpenWeatherAPI/
 dags/                         # Apache Airflow DAGs for orchestration
 logs/                         # Airflow logs and pipline logs
 openweather_dbt/              # dbt project (models, tests, transformations)
-OpenWeatherAPI/               #Modules(ingestion, processing, report, storage, logs config file, and main file)                
+OpenWeatherAPI/               #Modules(ingestion, processing, storage, report, logs, config file, and main file)                
 plugins/                      # Airflow custom plugins
 screenshots/
 ETL/                          # Code or terminal screenshots
