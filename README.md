@@ -180,7 +180,7 @@ source venv/bin/activate
 3. Install dependencies
 pip install -r requirements.txt
 4. Start services using Docker
-docker-compose up -d
+docker compose up -d
 5. cd superset
 docker compose -f docker-compose-image-tag.yml up -d
 cd .. (to go back to OpenWeatherAPI)
