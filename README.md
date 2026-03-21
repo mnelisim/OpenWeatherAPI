@@ -182,7 +182,7 @@ pip install -r requirements.txt
 4. Start services using Docker
 docker-compose up -d
 5. cd superset
-docker-compose -f docker-compose-image-tag.yml up -d
+docker compose -f docker-compose-image-tag.yml up -d
 cd .. (to go back to OpenWeatherAPI)
 6. Run dbt models
 cd ../openweather_dbt
