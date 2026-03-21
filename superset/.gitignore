@@ -138,3 +138,8 @@ PROJECT.md
 oxc-custom-build/
 *.code-workspace
 *.duckdb
+
+# Ignore specific files in superset
+superset/github/cosmetic.md
+superset/github/sip.md
+superset/workflows/bachlib.sh
