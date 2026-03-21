@@ -19,3 +19,16 @@ logs/
 #Reports
 OpenWeatherAPI/reports/csv/*.csv
 OpenWeatherAPI/reports/pdf/*.pdfsuperset/
+
+#superset cache and local files
+superset_home/
+superset.db
+
+# Ignore everything inside superset folder by default
+superset/*
+
+# But keep these specific files/folders
+!superset/docker-compose-image-tag.yml
+!superset/superset_config.py
+!superset/plugins/
+!superset/.gitignore
